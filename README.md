@@ -46,4 +46,4 @@ pip install -r requirements.txt
 python app/parse.py
 ```
 Wait a little bit for the scraper to collect all the information.
-Than you will got ```courses.csv``` file
+Than you will get ```courses.csv``` file
