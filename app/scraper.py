@@ -120,3 +120,17 @@ class MateScraper:
             course = self.update_course(course_name=course_name)
 
         return courses
+
+    def get_all_courses(self) -> list[Course]:
+        driver.get(URL_TO_SCRAPE)
+        self.change_language()
+
+        all_courses = []
+        courses = driver.find_elements(By.CLASS_NAME, COURSES_CSS_SELECTOR)
+
+        for course_index in range(len(courses) - 1):
+            course = self.parse_course_with_types(courses[course_index])
+            all_courses.extend(course)
+            courses = driver.find_elements(By.CLASS_NAME, COURSES_CSS_SELECTOR)
+
+        return all_courses
