@@ -1,0 +1,11 @@
+URL_TO_SCRAPE = "https://mate.academy/"
+LANGUAGE = "English"
+CSV_PATH = "courses.csv"
+
+MODULES_NUMBER_CSS_SELECTOR = "CourseModulesHeading_modulesNumber__UrnUh"
+TOPICS_NUMBER_CSS_SELECTOR = "CourseModulesHeading_topicsNumber__5IA8Z"
+COURSE_DURATION_CSS_SELECTOR = "CourseModulesHeading_courseDuration__qu2Lx"
+COURSES_CSS_SELECTOR = "ProfessionCard_cardWrapper__JQBNJ"
+SUBMIT_LANGUAGE_BUTTON_CSS_SELECTOR = "button[data-qa=country-selector-submit-button]"
+LANGUAGE_BUTTON_CSS_SELECTOR = "button[data-qa=header-change-language]"
+LANGUAGES_CSS_SELECTOR = "CountrySelectorElements_label__9tMv8"
