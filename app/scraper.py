@@ -3,7 +3,7 @@ import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 
-from app.config import (
+from config import (
     URL_TO_SCRAPE,
     LANGUAGE_BUTTON_CSS_SELECTOR,
     LANGUAGES_CSS_SELECTOR,
@@ -14,9 +14,9 @@ from app.config import (
     TOPICS_NUMBER_CSS_SELECTOR,
     COURSE_DURATION_CSS_SELECTOR,
 )
-from app.enums import CourseType
-from app.models import Course
-from app.web_driver import driver
+from enums import CourseType
+from models import Course
+from web_driver import driver
 
 
 class MateScraper:

@@ -1,9 +1,9 @@
 import csv
 from dataclasses import astuple
 
-from app.config import CSV_PATH
-from app.models import COURSE_FIELDS, Course
-from app.scraper import MateScraper
+from config import CSV_PATH
+from models import COURSE_FIELDS, Course
+from scraper import MateScraper
 
 
 def write_courses_to_csv(csv_path: str, all_courses: list[Course]) -> None:

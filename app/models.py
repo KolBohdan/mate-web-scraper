@@ -1,5 +1,5 @@
 from dataclasses import dataclass, fields
-from app.enums import CourseType
+from enums import CourseType
 
 
 @dataclass
